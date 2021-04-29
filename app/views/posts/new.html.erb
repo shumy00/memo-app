@@ -1,4 +1,4 @@
-<h1> 新規投稿ページ </h1>
+<h1> メモページ </h1>
 <%= form_with url: "/posts", method: :post, local: true do |form| %>
   <%= form.text_field :memo %>
   <%= form.submit 'メモを保存する' %>
@@ -6,7 +6,7 @@
 <% @posts.each do |post| %>
   <div class ="post">
     <div class="post.created_at">
-      メモ日時:<%= post.created_at %>
+      ＜メモ日時:<%= l post.created_at %>＞
     </div>
     <div class="post-content">
       <%= post.memo%>

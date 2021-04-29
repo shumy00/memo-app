@@ -1,7 +1,8 @@
 .post {
+  width: 80%;
+  margin-top: 20px;
   border: 1px solid;
-  width: 40%;
-  margin-top: 30px;
+  padding: 10px;
 }
 
 .post.created_at {
@@ -9,5 +10,5 @@
 }
 
 .post-date {
-  color: black;
+  color: gray;
 }
