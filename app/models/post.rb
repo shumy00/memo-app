@@ -8,7 +8,7 @@ class Post < ApplicationRecord
       integer.each do |num|
         sum += num.to_i
       end
-      puts sum.to_s
+      sum
 
     # elsif memo.include?("-")
     #     sum = 0
@@ -37,7 +37,6 @@ class Post < ApplicationRecord
     # 条件式が複雑なため、保留
 
     else
-      puts "テスト失敗"
     end
   end
 end

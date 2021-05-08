@@ -1,5 +1,5 @@
 <h1> メモページ </h1>
-<%= form_with url: "/posts", method: :post, local: true do |form| %>
+<%= form_with url: posts_path, method: :post, local: true do |form| %>
   <%= form.text_field :memo %>
   <%= form.submit 'メモを保存する' %>
 <% end %>
