@@ -7,9 +7,10 @@ class PostsController < ApplicationController
   end
 
   def create
+    @posts = Post.all.order('created_at DESC')
     if @post = Post.create(memo: params[:memo])
       @result = @post.enzan(memo: params[:memo])
-      redirect_to root_path
+      render :text => @result
     end
   end
 

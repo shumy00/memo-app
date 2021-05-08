@@ -16,7 +16,7 @@ class Post < ApplicationRecord
     #     integer.each do |num|
     #       sum -= num.to_i
     #     end
-    #     puts sum
+    #     sum
     # 条件式が複雑なため、保留
 
     elsif memo.include?("*")
@@ -25,7 +25,7 @@ class Post < ApplicationRecord
       integer.each do |num|
         sum *= num.to_i
       end
-      puts sum
+      sum
 
     # elsif memo.include?("/")
     #   sum = 1
@@ -33,7 +33,7 @@ class Post < ApplicationRecord
     #   integer.each do |num|
     #     sum /= num.to_i
     #   end
-    #   puts sum
+    #   sum
     # 条件式が複雑なため、保留
 
     else

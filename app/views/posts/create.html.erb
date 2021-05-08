@@ -1,7 +1,8 @@
 <h1> メモページ </h1>
-<%= form_with url: posts_path, method: :post, local: true do |form| %>
+<%= form_with url: "/posts", method: :post, local: true do |form| %>
   <%= form.text_field :memo %>
   <%= form.submit 'メモを保存する' %>
+  <%= @result %>
 <% end %>
 <% @posts.each do |post| %>
   <div class ="post">
@@ -10,7 +11,13 @@
     </div>
     <div class="post-content">
       <%= post.memo%>
-      <%= @result %>
     </div>
   </div>
+  <div class="more">
+      <ul class="more_list">
+        <li>
+          <%= link_to '削除', post_path(post.id), method: :delete %>
+        </li>
+      </ul>
+    </div>
 <% end %>
