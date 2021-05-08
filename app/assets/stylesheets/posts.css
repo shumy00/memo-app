@@ -3,12 +3,24 @@
   margin-top: 20px;
   border: 1px solid;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.more{
+  border: 1px solid;
+  width: 81.4%;
+  margin-top: 1px;
+  background-color: gainsboro;
+}
+
+ul {
+  list-style: none;
+
 }
 
 .post.created_at {
-  color: blue;
 }
 
 .post-date {
-  color: gray;
 }
