@@ -17,7 +17,7 @@ class Post < ApplicationRecord
     #       sum -= num.to_i
     #     end
     #     sum
-    # 条件式が複雑なため、保留
+    # 条件式が複雑なので保留
 
     elsif memo.include?("*")
       sum = 1
@@ -34,7 +34,7 @@ class Post < ApplicationRecord
     #     sum /= num.to_i
     #   end
     #   sum
-    # 条件式が複雑なため、保留
+    # 条件式が複雑なので保留
 
     else
     end
